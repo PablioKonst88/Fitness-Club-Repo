@@ -1,0 +1,47 @@
+$cotent_width:1167px;
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    max-width:$cotent_width;
+    margin: 0 auto;
+    padding: 0 20px;
+    border: 1px solid #000;
+}
+.header{
+
+    &__block {
+        background-color:green;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        
+    }
+
+    svg{
+        justify-self: flex-start;
+    }
+
+    &__links {
+        position: absolute;
+        border: 1px solid #000;
+        padding-left: 168px;
+        align-self: flex-end;
+    }
+
+   
+
+    &__link {
+    }
+
+    
+
+    &__drop-menu {
+        justify-self: flex-end;
+        // position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
