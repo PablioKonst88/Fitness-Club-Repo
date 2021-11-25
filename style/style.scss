@@ -1,47 +1,119 @@
-$cotent_width:1167px;
 *{
     margin: 0;
     padding: 0;
 }
-.wrapper {
-    max-width:$cotent_width;
-    margin: 0 auto;
-    padding: 0 20px;
-    border: 1px solid #000;
+body{
+    font-family: Josefin Sans, sans-serif;
+}
+.wrapper{
+    max-width: 1170px;
+    margin:0 auto;
+    outline: 1px solid green;
+}
+.outline{
+    outline:1px solid red;
+}
+.main_window{
+    max-width: 1600.03px;
+    height: 6602px;
+    background-color: #E5E5E5;
+    position: relative;  
+    background-image: url(../images/slider/bgimage.jpg);  
+}
+.forbgi{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../images/slider/bgimageonly.jpg);
 }
 .header{
-
-    &__block {
-        background-color:green;
+    position: absolute;
+    right: 0;
+    width: 1385px;
+    height: 1066px;
+    outline:1px solid red;
+    background-image: url(../images/slider/girl_with_bottle.jpg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    display:flex;
+    flex-direction: column;
+    
+    
+    &__menu{
+        max-width: 1170px;
         display: flex;
         justify-content: space-between;
-        position: relative;
+        height: 59px;
+    }
+    &__left{
+        display: flex;
+        justify-content: space-between;       
+    }
+    &__navigation{
+        align-self:flex-end;
+        padding-left: 123px;        
+    }
+    &__link{
+        text-decoration: none;
+        font-size: 24px;
+        line-height: 160%;
+        color: #837171;
+        padding-right: 60px;
+    }
+    &__link:hover{
+        color: #3A1212;
+        text-decoration:underline #FF2625;
+    }
+    &__button{
+        width: 46px;
+        height: 46px;
+    }
+    &__text{
+        outline:1px solid blue;
+        width: 472px;
+    }
+    &__minired{
+        padding-top: 212px;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 160%;
+        color: #FF2625;
+    }
+    &__tittle{
+        padding-top: 39px;
+        font-size: 80px;
+        line-height: 110%;
+        color: #3A1212;
+    }
+    &__main_text{
+        padding: 23px 0 61px;
+        font-size: 22px;
+        line-height: 160%;
+        color: #504747;
+    }
+    &__text_btn{
+        background-color: white;
+        border-radius: 50px;
+        width: 200px;
+        height: 58px;
+        font-size: 22px;
+        line-height: 160%;
+        color: #3A1212;
+        margin-right: 28px;
+        transition: 0.3s;
+        border:1px solid #FF2625;
         
     }
-
-    svg{
-        justify-self: flex-start;
+    &__text_btn:hover{
+       
+        color:white;
+        background-color: #FF2625;
     }
-
-    &__links {
-        position: absolute;
-        border: 1px solid #000;
-        padding-left: 168px;
-        align-self: flex-end;
-    }
-
-   
-
-    &__link {
-    }
-
-    
-
-    &__drop-menu {
-        justify-self: flex-end;
-        // position: absolute;
-        top: 0;
-        left: 0;
+    &__play_btn{
+        border-radius: 50%;
+        background-color: white;
+        padding:44px;
+        border: none;
+        justify-self: center;
+        align-self: center;
     }
 }
-
