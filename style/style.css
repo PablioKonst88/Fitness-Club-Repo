@@ -9,30 +9,93 @@ body {
 
 .wrapper {
   max-width: 1170px;
-  margin: 0 auto;
   outline: 1px solid green;
+}
+
+.button__text_btn {
+  background-color: white;
+  border-radius: 50px;
+  width: 200px;
+  height: 58px;
+  font-size: 22px;
+  line-height: 160%;
+  color: #3A1212;
+  margin-right: 28px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 1px solid #FF2625;
+}
+
+.button__text_btn:hover {
+  color: white;
+  background-color: #FF2625;
+}
+
+.smal_grey_text {
+  font-size: 22px;
+  line-height: 160%;
+  color: #504747;
+}
+
+.min_red_text {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 160%;
+  color: #FF2625;
+}
+
+.big_black_text {
+  font-size: 44px;
+  line-height: 130%;
+  text-align: center;
+  color: #3A1212;
 }
 
 .outline {
   outline: 1px solid red;
 }
 
-.main_window {
-  max-width: 1600.03px;
+.podlozka {
+  max-width: 1600px;
   height: 6602px;
-  background-color: #E5E5E5;
+  background: #FFFAFB;
+  outline: 2px solid black;
+  padding-top: 187px;
   position: relative;
+}
+
+.podlozka__main_window {
+  max-width: 1600.03px;
+  opacity: .7;
+  height: 5639,4px;
+  padding: 308px 50px 0 50px;
+  background-color: #E5E5E5;
   background-image: url(../images/slider/bgimage.jpg);
 }
 
-.forbgi {
-  width: 100%;
+.podlozka__forbgi {
+  max-width: 100%;
+  height: 5660px;
   background-repeat: no-repeat;
+  opacity: .7;
   background-image: url(../images/slider/bgimageonly.jpg);
 }
 
-.header {
+.all_site_body {
+  top: 0;
+  right: 0;
+  max-width: 1600px;
+  height: 6602px;
   position: absolute;
+  z-index: 1;
+}
+
+.image_dots {
+  width: 118px;
+  height: 134px;
+}
+
+.header {
   right: 0;
   width: 1385px;
   height: 1066px;
@@ -95,16 +158,14 @@ body {
 }
 
 .header__text {
-  outline: 1px solid blue;
   width: 472px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .header__minired {
   padding-top: 212px;
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 160%;
-  color: #FF2625;
 }
 
 .header__tittle {
@@ -116,33 +177,13 @@ body {
 
 .header__main_text {
   padding: 23px 0 61px;
-  font-size: 22px;
-  line-height: 160%;
-  color: #504747;
-}
-
-.header__text_btn {
-  background-color: white;
-  border-radius: 50px;
-  width: 200px;
-  height: 58px;
-  font-size: 22px;
-  line-height: 160%;
-  color: #3A1212;
-  margin-right: 28px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  border: 1px solid #FF2625;
-}
-
-.header__text_btn:hover {
-  color: white;
-  background-color: #FF2625;
 }
 
 .header__play_btn {
   border-radius: 50%;
   background-color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   padding: 44px;
   border: none;
   -ms-grid-column-align: center;
@@ -150,5 +191,192 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  margin-top: -800px;
+  margin-right: 100px;
+  -webkit-box-shadow: 0px 40px 80px rgba(255, 71, 70, 0.1);
+          box-shadow: 0px 40px 80px rgba(255, 71, 70, 0.1);
+}
+
+.header__play_btn svg {
+  fill: #FF2625;
+}
+
+.header__play_btn:hover {
+  fill: white;
+  background-color: #FF2625;
+}
+
+.header__play_btn:hover svg {
+  fill: white;
+}
+
+.header__dots {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 450px;
+  margin-right: -1200px;
+}
+
+.header__bottom-text {
+  font-weight: 600;
+  font-size: 200px;
+  line-height: 160%;
+  color: rgba(255, 38, 37, 0.05);
+}
+
+.servises__servis_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 588.45px;
+  outline: 1px solid red;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 171px;
+  position: relative;
+}
+
+.servises__text {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 160%;
+  color: #FF2625;
+}
+
+.servises__bigtext {
+  padding: 28px 0 57px 0;
+}
+
+.servises__cart-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.servises__cart {
+  width: 270px;
+  height: 282px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #FFFFFF;
+  border: 0.5px solid #E1E1E1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px 5px 5px 35px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.servises__cart:hover {
+  height: 332px;
+}
+
+.servises__cart:hover .servises__cart_link {
+  display: inline;
+}
+
+.servises__cart_img {
+  padding: 65px 0 47px 0;
+  width: 63px;
+  height: 63px;
+}
+
+.servises__cart_text {
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #3A1212;
+}
+
+.servises__cart_link {
+  text-decoration: none;
+  color: #FF2625;
+  font-size: 22px;
+  line-height: 120%;
+  text-align: center;
+  padding: 40px 0 33px 0;
+  display: none;
+}
+
+.servises__cart_link:hover {
+  font-size: 23px;
+}
+
+.servises__button_box {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 31.45px;
+}
+
+.servises__button_box svg {
+  fill: #3A1212;
+}
+
+.servises__btn {
+  border: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background-color: transparent;
+}
+
+.servises__btn:hover svg {
+  fill: #FF2625;
+  width: 31.45px;
+  height: 31.45px;
+  -webkit-box-shadow: 0px 10px 10px rgba(255, 38, 37, 0.25);
+          box-shadow: 0px 10px 10px rgba(255, 38, 37, 0.25);
+}
+
+.health {
+  width: 100%;
+  height: 665px;
+  outline: 1px solid green;
+  position: relative;
+  background-image: url(../images/health/Rectangle.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.health svg {
+  position: absolute;
+  left: -50px;
+  top: -50px;
+}
+
+.health__box_wrap {
+  width: 502px;
+  min-height: 454px;
+  position: absolute;
+  right: 0;
+  margin-top: 111px;
+}
+
+.health__big_text {
+  text-align: start;
+  padding: 28px 0 22px 0;
+}
+
+.health_grey_text {
+  padding-bottom: 42px;
 }
 /*# sourceMappingURL=style.css.map */

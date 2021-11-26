@@ -7,26 +7,94 @@ body{
 }
 .wrapper{
     max-width: 1170px;
-    margin:0 auto;
+    // margin:0 auto;
     outline: 1px solid green;
+}
+.button{
+    &__text_btn{
+        background-color: white;
+        border-radius: 50px;
+        width: 200px;
+        height: 58px;
+        font-size: 22px;
+        line-height: 160%;
+        color: #3A1212;
+        margin-right: 28px;
+        transition: 0.3s;
+        border:1px solid #FF2625;
+        
+    }
+    &__text_btn:hover{
+       
+        color:white;
+        background-color: #FF2625;
+    }
+}
+.smal_grey_text{
+        
+        font-size: 22px;
+        line-height: 160%;
+        color: #504747;   
+}
+.min_red_text{
+        
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 160%;
+        color: #FF2625;
+}
+.big_black_text{
+        font-size: 44px;
+        line-height: 130%;
+        text-align: center;
+        color: #3A1212;
 }
 .outline{
     outline:1px solid red;
 }
-.main_window{
-    max-width: 1600.03px;
+.podlozka{
+    max-width: 1600px;
     height: 6602px;
-    background-color: #E5E5E5;
-    position: relative;  
-    background-image: url(../images/slider/bgimage.jpg);  
+    background: #FFFAFB;
+    outline:2px solid black;
+    padding-top:187px;
+    position: relative;
+
+    &__main_window{
+        max-width: 1600.03px;
+        opacity: .7;
+        height: 5639,4px;
+        padding: 308px 50px 0 50px;
+        background-color: #E5E5E5;
+        // position: relative;
+        background-image: url(../images/slider/bgimage.jpg);  
+    }
+    &__forbgi{
+        
+        // position: relative;
+        max-width: 100%;
+        height: 5660px;
+        background-repeat: no-repeat;
+        opacity: .7;
+        background-image: url(../images/slider/bgimageonly.jpg);
+    }
 }
-.forbgi{
-    width: 100%;
-    background-repeat: no-repeat;
-    background-image: url(../images/slider/bgimageonly.jpg);
+.all_site_body{
+    top:0;
+    right: 0;
+    max-width: 1600px;
+    // width: 100%;
+    height: 6602px;
+    // background-color: yellow;
+    position: absolute;
+    z-index: 1;
+}
+.image_dots{
+    width: 118px;
+    height: 134px;
 }
 .header{
-    position: absolute;
+    
     right: 0;
     width: 1385px;
     height: 1066px;
@@ -67,16 +135,17 @@ body{
         width: 46px;
         height: 46px;
     }
+    &__bottom-text{
+
+    }
     &__text{
-        outline:1px solid blue;
+        
         width: 472px;
+        justify-content: flex-start;
     }
     &__minired{
         padding-top: 212px;
-        font-weight: 600;
-        font-size: 26px;
-        line-height: 160%;
-        color: #FF2625;
+        
     }
     &__tittle{
         padding-top: 39px;
@@ -86,34 +155,162 @@ body{
     }
     &__main_text{
         padding: 23px 0 61px;
-        font-size: 22px;
-        line-height: 160%;
-        color: #504747;
-    }
-    &__text_btn{
-        background-color: white;
-        border-radius: 50px;
-        width: 200px;
-        height: 58px;
-        font-size: 22px;
-        line-height: 160%;
-        color: #3A1212;
-        margin-right: 28px;
-        transition: 0.3s;
-        border:1px solid #FF2625;
         
-    }
-    &__text_btn:hover{
-       
-        color:white;
-        background-color: #FF2625;
     }
     &__play_btn{
         border-radius: 50%;
         background-color: white;
+        transition: 0.2s;
         padding:44px;
         border: none;
         justify-self: center;
         align-self: center;
+        margin-top:-800px;
+        margin-right: 100px;
+        box-shadow:0px 40px 80px rgba(255, 71, 70, 0.1);
+
+    }
+    &__play_btn svg{
+        fill:#FF2625;
+        
+    }
+    &__play_btn:hover{
+        fill:white;
+        background-color:#FF2625 ;
+    }
+    &__play_btn:hover svg{
+        fill:white;
+    }
+    &__dots{
+        justify-self: center;
+        align-self: center;
+        margin-top:450px;
+        margin-right: -1200px;
+        
+    }
+    &__bottom-text{
+        font-weight: 600;
+        font-size: 200px;
+        line-height: 160%;
+        color: rgba(255, 38, 37, 0.05);  
+    }
+}
+.servises{
+    &__servis_wrap{
+        display: flex;
+        flex-direction: column;
+        height: 588.45px;
+        outline: 1px solid red;
+        align-items: center;
+        padding-top: 171px;
+        position:relative;
+    }
+    &__text{
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 160%;
+        color: #FF2625;
+    }
+    &__bigtext{
+       
+        padding:28px 0 57px 0;
+    }
+    &__cart-box{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        
+    }
+    &__cart{
+        width: 270px;
+        height: 282px;
+        display: flex;
+        flex-direction: column;
+        background: #FFFFFF;
+        border: 0.5px solid #E1E1E1;
+        box-sizing: border-box;
+        border-radius: 5px 5px 5px 35px;
+        // justify-content: center;
+        align-items: center;
+    }
+    &__cart:hover{
+        height: 332px;
+    }
+    &__cart:hover &__cart_link{
+        display: inline;
+    }
+    &__cart_img{
+        padding:65px 0 47px 0;
+        width: 63px;
+        height: 63px;
+    }
+    &__cart_text{
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        color: #3A1212;
+    }
+    &__cart_link{
+        text-decoration: none;
+        color: #FF2625;
+        font-size: 22px;
+        line-height: 120%;
+        text-align: center;
+        padding:40px 0 33px 0;
+        display: none;
+    }
+    &__cart_link:hover{
+        font-size: 23px;
+    }
+    &__button_box{   
+        position:absolute;
+        bottom:0;
+        right: 0;
+        width: 60px;
+        height: 31.45px; 
+        // outline:1px solid red;
+    }
+    &__button_box svg{       
+        fill:#3A1212;       
+    }
+    &__btn{
+        border: none;
+        transition: 0.2s;
+        background-color: transparent;
+    }
+    &__btn:hover svg{       
+        fill:#FF2625;
+        width: 31.45px;
+        height: 31.45px;
+        box-shadow:0px 10px 10px rgba(255, 38, 37, 0.25);     
+    }
+     
+}
+.health{
+    width: 100%;
+    height: 665px;
+    outline:1px solid green;
+    position: relative;
+    background-image: url(../images/health/Rectangle.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    & svg{
+        position: absolute;
+        left:-50px;
+        top:-50px;
+    }
+    &__box_wrap{
+        width: 502px;
+        min-height: 454px;
+        position: absolute;
+        right: 0;
+        margin-top: 111px;
+    }
+    &__big_text{
+        text-align: start;
+        padding:28px 0 22px 0;
+    }
+    &_grey_text{
+        padding-bottom: 42px;
     }
 }
