@@ -7,7 +7,7 @@ body{
 }
 .wrapper{
     max-width: 1170px;
-    // margin:0 auto;
+    margin:0 auto;
     outline: 1px solid green;
 }
 .button{
@@ -52,50 +52,20 @@ body{
 .outline{
     outline:1px solid red;
 }
-.podlozka{
-    max-width: 1600px;
-    height: 6602px;
-    background: #FFFAFB;
-    outline:2px solid black;
-    padding-top:187px;
-    position: relative;
-
-    &__main_window{
-        max-width: 1600.03px;
-        opacity: .7;
-        height: 5639,4px;
-        padding: 308px 50px 0 50px;
-        background-color: #E5E5E5;
-        // position: relative;
-        background-image: url(../images/slider/bgimage.jpg);  
-    }
-    &__forbgi{
-        
-        // position: relative;
-        max-width: 100%;
-        height: 5660px;
-        background-repeat: no-repeat;
-        opacity: .7;
-        background-image: url(../images/slider/bgimageonly.jpg);
-    }
-}
 .all_site_body{
-    top:0;
-    right: 0;
     max-width: 1600px;
-    // width: 100%;
+    margin: 0 auto;
     height: 6602px;
-    // background-color: yellow;
-    position: absolute;
-    z-index: 1;
+    background-image: url(../images/header/Frame5.jpg);
+    background-repeat: no-repeat;
+    background-position-y:  150px;
+    outline:1px solid black;
 }
 .image_dots{
     width: 118px;
     height: 134px;
 }
 .header{
-    
-    right: 0;
     width: 1385px;
     height: 1066px;
     outline:1px solid red;
@@ -104,8 +74,7 @@ body{
     background-position-x: right;
     display:flex;
     flex-direction: column;
-    
-    
+    padding-left: 215px;  
     &__menu{
         max-width: 1170px;
         display: flex;
@@ -203,7 +172,7 @@ body{
         outline: 1px solid red;
         align-items: center;
         padding-top: 171px;
-        position:relative;
+        
     }
     &__text{
         font-weight: 600;
@@ -294,6 +263,7 @@ body{
     background-image: url(../images/health/Rectangle.jpg);
     background-position: left;
     background-repeat: no-repeat;
+
     & svg{
         position: absolute;
         left:-50px;

@@ -9,6 +9,7 @@ body {
 
 .wrapper {
   max-width: 1170px;
+  margin: 0 auto;
   outline: 1px solid green;
 }
 
@@ -55,39 +56,14 @@ body {
   outline: 1px solid red;
 }
 
-.podlozka {
-  max-width: 1600px;
-  height: 6602px;
-  background: #FFFAFB;
-  outline: 2px solid black;
-  padding-top: 187px;
-  position: relative;
-}
-
-.podlozka__main_window {
-  max-width: 1600.03px;
-  opacity: .7;
-  height: 5639,4px;
-  padding: 308px 50px 0 50px;
-  background-color: #E5E5E5;
-  background-image: url(../images/slider/bgimage.jpg);
-}
-
-.podlozka__forbgi {
-  max-width: 100%;
-  height: 5660px;
-  background-repeat: no-repeat;
-  opacity: .7;
-  background-image: url(../images/slider/bgimageonly.jpg);
-}
-
 .all_site_body {
-  top: 0;
-  right: 0;
   max-width: 1600px;
+  margin: 0 auto;
   height: 6602px;
-  position: absolute;
-  z-index: 1;
+  background-image: url(../images/header/Frame5.jpg);
+  background-repeat: no-repeat;
+  background-position-y: 150px;
+  outline: 1px solid black;
 }
 
 .image_dots {
@@ -96,7 +72,6 @@ body {
 }
 
 .header {
-  right: 0;
   width: 1385px;
   height: 1066px;
   outline: 1px solid red;
@@ -110,6 +85,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-left: 215px;
 }
 
 .header__menu {
@@ -241,7 +217,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 171px;
-  position: relative;
 }
 
 .servises__text {
