@@ -60,6 +60,7 @@ body{
     background-repeat: no-repeat;
     background-position-y:  150px;
     outline:1px solid black;
+    background-color: #FFFAFB;
 }
 .image_dots{
     width: 118px;
@@ -75,6 +76,7 @@ body{
     display:flex;
     flex-direction: column;
     padding-left: 215px;  
+    background-color: #FFFAFB;
     &__menu{
         max-width: 1170px;
         display: flex;
@@ -172,7 +174,8 @@ body{
         outline: 1px solid red;
         align-items: center;
         padding-top: 171px;
-        
+        position: relative;
+        background-color: #FFFAFB;
     }
     &__text{
         font-weight: 600;
@@ -263,6 +266,8 @@ body{
     background-image: url(../images/health/Rectangle.jpg);
     background-position: left;
     background-repeat: no-repeat;
+    padding-top:212px;
+    background-color: #FFFAFB;
 
     & svg{
         position: absolute;
@@ -282,5 +287,186 @@ body{
     }
     &_grey_text{
         padding-bottom: 42px;
+    }
+}
+.improve{
+    width: 100%;
+    height: 665px;
+    outline:1px solid green;
+    position: relative;
+    background-image: url(../images/improve/improvegirl.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-top:212px;
+    background-color: #FFFAFB;
+
+    & svg{
+        position: absolute;
+        right:-50px;
+        bottom:-50px;
+    }
+    &__box_wrap{
+        width: 502px;
+        min-height: 454px;
+        position: absolute;
+        left: 0;
+        margin-top: 111px;
+    }
+    &__big_text{
+        text-align: start;
+        padding:28px 0 22px 0;
+    }
+    &_grey_text{
+        padding-bottom: 42px;
+    }
+}
+.intructors{
+    display: flex;
+    flex-direction: column;
+    width: 1070.45px;
+    height: 697.45px;
+    padding-left: 100px;
+    align-items: center;
+    padding-top:146px;
+    position: relative;
+    background-color: #FFFAFB;
+    &__text{
+        padding:28px 0 24px 0;
+    }
+    &__hub{
+        display: flex;
+        justify-content: space-between;
+        gap:81px;
+    }
+    &__div{
+        width: 268px;
+        height: 448px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__image_box{
+        width: 271px;
+        height: 380px;       
+        position: relative;
+        
+        
+    }
+    &__image{
+        position:absolute;
+        bottom:0;
+    }
+    &__name{
+        padding-top:38px;
+        font-size: 24px;
+        line-height: 160%;
+        text-align: center;
+        color: #000000;
+    }
+    &__button_box{   
+        position:absolute;
+        bottom:0;
+        right: 0;
+        width: 60px;
+        height: 31.45px; 
+        // outline:1px solid red;
+    }
+    &__button_box svg{       
+        fill:#3A1212;       
+    }
+    &__btn{
+        border: none;
+        transition: 0.2s;
+        background-color: transparent;
+    }
+    &__btn:hover svg{       
+        fill:#FF2625;
+        width: 31.45px;
+        height: 31.45px;
+        box-shadow:0px 10px 10px rgba(255, 38, 37, 0.25);     
+    }
+     
+}
+.testimonional{
+    width: 100%;
+    height: 719px;
+    outline:1px solid green;
+    position: relative;
+    background-image: url(../images/testimonional/testimonional.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-color: #FFFAFB;
+    
+    
+
+    & svg{
+        position: absolute;
+        right:0;
+        bottom:0;
+    }
+    &__box_wrap{
+        width: 502px;
+        min-height: 454px;
+        position: absolute;
+        right: 0;
+    }
+    &__big_text{
+        text-align: start;
+        padding:28px 0 22px 0;
+    }
+    &_grey_text{
+        font-style: italic;
+    }
+    &__text_box{
+        width: 624px;
+        // display: box;
+        background: #FFFFFF;
+        border-radius: 2px 100px 2px 2px;
+        position: absolute;
+        padding: 79px 60px 39px 60px;
+        right: 50px;
+        bottom:-200px;
+        background-image: url(../images/testimonional/testimobgi.jpg);
+        background-position-x: center;
+        background-position-y: top;
+        background-repeat: no-repeat;
+
+    }
+    &__name{
+        font-size: 24px;
+        line-height: 130%;
+        color: #3A1212;
+        padding:39px 0 8px;
+    }
+    &__adress{
+        font-size: 18px;
+        line-height: 130%;
+        color: #504747;
+    }
+    // &__conteiner{
+    //     position: relative;
+    // }
+    &__button_box{   
+        // position:absolute;
+        // bottom:0;
+        // right: 0;
+        width: 60px;
+        height: 31.45px; 
+        outline:1px solid red;
+    }
+    &__button_box svg{       
+        fill:#3A1212;       
+    }
+    &__btn{
+        border: none;
+        transition: 0.2s;
+        background-color: transparent;
+    }
+    &__btn:hover svg{       
+        fill:#FF2625;
+        width: 31.45px;
+        height: 31.45px;
+        box-shadow:0px 10px 10px rgba(255, 38, 37, 0.25);     
     }
 }
