@@ -58,6 +58,7 @@ body{
     height: 6602px;
     background-image: url(../images/header/Frame5.jpg);
     background-repeat: no-repeat;
+    
     background-position-y:  150px;
     outline:1px solid black;
     background-color: #FFFAFB;
@@ -396,7 +397,7 @@ body{
     background-image: url(../images/testimonional/testimonional.jpg);
     background-position: left;
     background-repeat: no-repeat;
-    background-color: #FFFAFB;
+    background-color: transparent;
     
     
 
@@ -432,7 +433,7 @@ body{
         background-position-x: center;
         background-position-y: top;
         background-repeat: no-repeat;
-        
+        box-shadow:0px 40px 80px rgba(255, 169, 169, 0.25);
 
     }
     &__name{
@@ -474,4 +475,128 @@ body{
     }
    
 }
+.subscripe{
+    &__wrap{
+        // padding-top:230px;
+        max-width: 633px;
+        margin:230px auto 0;
+        display:flex;
+        flex-direction: column;
+        background-color: transparent;
+    }
+    &__grey_text{
+        padding:24px 0 36px 0;
+    }
+    &__form {
+        width: 100%;
+        height: 76px;
+        display: flex;
+        border-radius: 36px;
+        background-color: #FFFFFF;
+        align-items: center;
+        box-shadow:0px 40px 80px rgba(255, 169, 169, 0.25);
+      }
+    &__field {
+        width: 100%;        
+        border: none;       
+        color: #9B9DAC;
+        font-size: 20px;        
+        background-color: transparent;
+        padding: 0 10px 0 79px;
+      }
+      
+      &__field:-ms-input-placeholder {
+        font-size: 20px;
+        line-height: 160%;
+        color: #9B9DAC;
+        opacity: 0.67;
+      }
+      
+      &__form:hover{
+        background-color: #E9E9E9;
+      }
+      /*убираем рамку при вводе*/
+      &__field:active, :hover, :focus {
+        outline: 0;
+        outline-offset: 0;
+    }
+      
+      &__button {
+        width: 170px;
+        height: 58px;
+        padding: 13px 38px;
+        border-radius: 30px;
+        background-color:  #FF2625;
+        border: none;
+        color: #FFFFFF;
+        font-size: 20px;
+        line-height: 160%;
+        margin: 8px;
+      }
+      
+      &__button:hover {
+        background-color: #c34455;
+      }
+}
+.footer{
+    width: 100%;
+    height: 440px;
+    background-color: rgba(255, 243, 244, 0.9);
+    &__wrap{
+        width: 100%;
+        height: 440px;
+        display: flex;
+        justify-content:space-between;   
+        
+    }
+    &__pad{
+        margin-top:262px;
+    }
+    &__left_div{
+        display: flex;
+        flex-direction: column;
+        width: 333px;
+        height: 254px;
+        outline:1px solid red;
+        left:0;
+    }
+    &__left_title{
+        font-size: 28px;
+        line-height: 120%;
+        color: #3A1212;
+    }
+    &__left_text{
+        padding:33px 0 27px;
+    }
+    &__logotyps{
+        display: flex;
+        justify-content: space-between;
+        gap:14px;
+        width: 220px;
+    }
+    &__bootons{
+        background-color: white;
+        border-radius: 100px;
+        height: 44.76px;
+        width:44.76px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0,3s;
+    }
+    &__bootons:hover {
+        background-color: #FF2625;
+        box-shadow:0px 40px 80px rgba(255, 169, 169, 0.25);
+    }
+    &__bootons svg{
+        fill:#FF2625;
+        transition: 0,3s;
+    }
+    &__bootons:hover svg{
+        fill:white;
+    }
+}
+
+  
+  
    
