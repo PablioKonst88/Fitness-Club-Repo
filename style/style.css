@@ -6,7 +6,7 @@
 
 body {
   background-color: #FFFAFB;
-  font-family: Josefin Sans, sans-serif;
+  font-family: 'Josefin Sans', sans-serif;;
 }
 
 .wrapper {
@@ -553,7 +553,7 @@ body {
 
 .testimonional__button_box {
   position: absolute;
-  bottom: -10;
+  bottom: -10px;
   right: -40px;
   width: 60px;
   height: 31.45px;
@@ -726,8 +726,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: 0,3s;
-  transition: 0,3s;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .footer__bootons:hover {
@@ -738,8 +738,8 @@ body {
 
 .footer__bootons svg {
   fill: #FF2625;
-  -webkit-transition: 0,3s;
-  transition: 0,3s;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .footer__bootons:hover svg {

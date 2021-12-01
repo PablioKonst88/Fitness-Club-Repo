@@ -441,7 +441,7 @@ body{
     }
     &__button_box{   
         position:absolute;
-        bottom:-10;
+        bottom:-10px;
         right: -40px;
         width: 60px;
         height: 31.45px; 
@@ -570,7 +570,7 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: 0,3s;
+        transition: .3s;
     }
     &__bootons:hover {
         background-color: #FF2625;
@@ -578,7 +578,7 @@ body{
     }
     &__bootons svg{
         fill:#FF2625;
-        transition: 0,3s;
+        transition: .3s;
     }
     &__bootons:hover svg{
         fill:white;
