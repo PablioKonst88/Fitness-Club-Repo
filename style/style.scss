@@ -540,15 +540,11 @@ body{
         justify-content:space-between;
     }
     
-    // &__pad{
-    //     padding-top:262px;
-    // }
     &__left_div{
         display: flex;
         flex-direction: column;
         width: 333px;
         height: 254px;
-        // outline:1px solid red;
         left:0;
         padding-top:67px;
     }
@@ -590,7 +586,6 @@ body{
     &__rigth_div{
         display:flex;
         justify-content: space-between;
-        // outline:1px solid black;
         gap:168px;
         padding-top:85px;
     }
