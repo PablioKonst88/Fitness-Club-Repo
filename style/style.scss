@@ -3,12 +3,13 @@
     padding: 0;
 }
 body{
+    background-color: #FFFAFB;
     font-family: Josefin Sans, sans-serif;
 }
 .wrapper{
     max-width: 1170px;
     margin:0 auto;
-    outline: 1px solid green;
+    // outline: 1px solid green;
 }
 .button{
     &__text_btn{
@@ -49,35 +50,29 @@ body{
         text-align: center;
         color: #3A1212;
 }
-.outline{
-    outline:1px solid red;
-}
 .all_site_body{
     max-width: 1600px;
     margin: 0 auto;
-    height: 6602px;
     background-image: url(../images/header/Frame5.jpg);
     background-repeat: no-repeat;
-    
+    padding:0 20px;
     background-position-y:  150px;
-    outline:1px solid black;
-    background-color: #FFFAFB;
 }
 .image_dots{
     width: 118px;
     height: 134px;
 }
+
 .header{
-    width: 1385px;
+
+    max-width: 1385px;
     height: 1066px;
-    outline:1px solid red;
     background-image: url(../images/slider/girl_with_bottle.jpg);
     background-repeat: no-repeat;
     background-position-x: right;
     display:flex;
     flex-direction: column;
-    padding-left: 215px;  
-    background-color: #FFFAFB;
+    margin-left: 215px;  
     &__menu{
         max-width: 1170px;
         display: flex;
@@ -106,9 +101,6 @@ body{
     &__button{
         width: 46px;
         height: 46px;
-    }
-    &__bottom-text{
-
     }
     &__text{
         
@@ -172,11 +164,10 @@ body{
         display: flex;
         flex-direction: column;
         height: 588.45px;
-        outline: 1px solid red;
         align-items: center;
-        padding-top: 171px;
+        margin-top: 171px;
         position: relative;
-        background-color: #FFFAFB;
+        // background-color: #FFFAFB;
     }
     &__text{
         font-weight: 600;
@@ -203,11 +194,11 @@ body{
         border: 0.5px solid #E1E1E1;
         box-sizing: border-box;
         border-radius: 5px 5px 5px 35px;
-        // justify-content: center;
         align-items: center;
     }
     &__cart:hover{
         height: 332px;
+        box-shadow:0px 40px 80px rgba(255, 169, 169, 0.25);
     }
     &__cart:hover &__cart_link{
         display: inline;
@@ -241,7 +232,6 @@ body{
         right: 0;
         width: 60px;
         height: 31.45px; 
-        // outline:1px solid red;
     }
     &__button_box svg{       
         fill:#3A1212;       
@@ -262,18 +252,17 @@ body{
 .health{
     width: 100%;
     height: 665px;
-    outline:1px solid green;
     position: relative;
     background-image: url(../images/health/Rectangle.jpg);
     background-position: left;
     background-repeat: no-repeat;
     padding-top:212px;
-    background-color: #FFFAFB;
+    // background-color: #FFFAFB;
 
     & svg{
         position: absolute;
         left:-50px;
-        top:-50px;
+        top:30px;
     }
     &__box_wrap{
         width: 502px;
@@ -293,18 +282,18 @@ body{
 .improve{
     width: 100%;
     height: 665px;
-    outline:1px solid green;
     position: relative;
     background-image: url(../images/improve/improvegirl.jpg);
     background-position: right;
     background-repeat: no-repeat;
     padding-top:212px;
-    background-color: #FFFAFB;
+    
+    // background-color: #FFFAFB;
 
     & svg{
         position: absolute;
         right:-50px;
-        bottom:-50px;
+        bottom:40px;
     }
     &__box_wrap{
         width: 502px;
@@ -324,13 +313,12 @@ body{
 .intructors{
     display: flex;
     flex-direction: column;
-    width: 1070.45px;
+    max-width: 1070.45px;
     height: 697.45px;
     padding-left: 100px;
     align-items: center;
     padding-top:146px;
     position: relative;
-    background-color: #FFFAFB;
     &__text{
         padding:28px 0 24px 0;
     }
@@ -370,8 +358,7 @@ body{
         bottom:0;
         right: 0;
         width: 60px;
-        height: 31.45px; 
-        // outline:1px solid red;
+        height: 31.45px;
     }
     &__button_box svg{       
         fill:#3A1212;       
@@ -392,14 +379,12 @@ body{
 .testimonional{
     width: 100%;
     height: 719px;
-    outline:1px solid green;
     position: relative;
     background-image: url(../images/testimonional/testimonional.jpg);
     background-position: left;
     background-repeat: no-repeat;
     background-color: transparent;
-    
-    
+    margin-top:204px;
 
     &__dots{
         position: absolute;
@@ -422,7 +407,6 @@ body{
     }
     &__text_box{
         width: 624px;
-        // display: box;
         background: #FFFFFF;
         border-radius: 2px 100px 2px 2px;
         position: absolute;
@@ -477,9 +461,9 @@ body{
 }
 .subscripe{
     &__wrap{
-        // padding-top:230px;
         max-width: 633px;
-        margin:230px auto 0;
+        padding-top:230px;
+        padding-bottom:262px;
         display:flex;
         flex-direction: column;
         background-color: transparent;
@@ -540,25 +524,29 @@ body{
 }
 .footer{
     width: 100%;
-    height: 440px;
+    min-height: 440px;
     background-color: rgba(255, 243, 244, 0.9);
     &__wrap{
         width: 100%;
-        height: 440px;
-        display: flex;
-        justify-content:space-between;   
+        height: 440px;  
         
     }
-    &__pad{
-        margin-top:262px;
+    &__column_conteiner{
+        display: flex;
+        justify-content:space-between;
     }
+    
+    // &__pad{
+    //     padding-top:262px;
+    // }
     &__left_div{
         display: flex;
         flex-direction: column;
         width: 333px;
         height: 254px;
-        outline:1px solid red;
+        // outline:1px solid red;
         left:0;
+        padding-top:67px;
     }
     &__left_title{
         font-size: 28px;
@@ -594,6 +582,41 @@ body{
     }
     &__bootons:hover svg{
         fill:white;
+    }
+    &__rigth_div{
+        display:flex;
+        justify-content: space-between;
+        // outline:1px solid black;
+        gap:168px;
+        padding-top:85px;
+    }
+    &__columns{
+        display:flex;
+        flex-direction: column;        
+    }
+    &__right_title{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        color: #3A1212;
+        padding-bottom:39px;
+    }
+    &__right_text{
+        text-decoration: none;
+        padding-bottom:18px;
+    }
+    &__right_text:hover{
+        color: #3A1212;
+        text-decoration:underline #FF2625;
+    }
+    &__down_text{
+        text-align: center;
+        padding: 25px 0 55px;
+        font-weight: 450;
+        font-size: 12px;
+        line-height: 120%;
+        color: #A69B9B;
     }
 }
 

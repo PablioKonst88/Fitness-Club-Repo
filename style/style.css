@@ -5,13 +5,13 @@
 }
 
 body {
+  background-color: #FFFAFB;
   font-family: Josefin Sans, sans-serif;
 }
 
 .wrapper {
   max-width: 1170px;
   margin: 0 auto;
-  outline: 1px solid green;
 }
 
 .button__text_btn {
@@ -53,19 +53,13 @@ body {
   color: #3A1212;
 }
 
-.outline {
-  outline: 1px solid red;
-}
-
 .all_site_body {
   max-width: 1600px;
   margin: 0 auto;
-  height: 6602px;
   background-image: url(../images/header/Frame5.jpg);
   background-repeat: no-repeat;
+  padding: 0 20px;
   background-position-y: 150px;
-  outline: 1px solid black;
-  background-color: #FFFAFB;
 }
 
 .image_dots {
@@ -74,9 +68,8 @@ body {
 }
 
 .header {
-  width: 1385px;
+  max-width: 1385px;
   height: 1066px;
-  outline: 1px solid red;
   background-image: url(../images/slider/girl_with_bottle.jpg);
   background-repeat: no-repeat;
   background-position-x: right;
@@ -87,8 +80,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 215px;
-  background-color: #FFFAFB;
+  margin-left: 215px;
 }
 
 .header__menu {
@@ -215,13 +207,11 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 588.45px;
-  outline: 1px solid red;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 171px;
+  margin-top: 171px;
   position: relative;
-  background-color: #FFFAFB;
 }
 
 .servises__text {
@@ -267,6 +257,8 @@ body {
 
 .servises__cart:hover {
   height: 332px;
+  -webkit-box-shadow: 0px 40px 80px rgba(255, 169, 169, 0.25);
+          box-shadow: 0px 40px 80px rgba(255, 169, 169, 0.25);
 }
 
 .servises__cart:hover .servises__cart_link {
@@ -330,19 +322,17 @@ body {
 .health {
   width: 100%;
   height: 665px;
-  outline: 1px solid green;
   position: relative;
   background-image: url(../images/health/Rectangle.jpg);
   background-position: left;
   background-repeat: no-repeat;
   padding-top: 212px;
-  background-color: #FFFAFB;
 }
 
 .health svg {
   position: absolute;
   left: -50px;
-  top: -50px;
+  top: 30px;
 }
 
 .health__box_wrap {
@@ -365,19 +355,17 @@ body {
 .improve {
   width: 100%;
   height: 665px;
-  outline: 1px solid green;
   position: relative;
   background-image: url(../images/improve/improvegirl.jpg);
   background-position: right;
   background-repeat: no-repeat;
   padding-top: 212px;
-  background-color: #FFFAFB;
 }
 
 .improve svg {
   position: absolute;
   right: -50px;
-  bottom: -50px;
+  bottom: 40px;
 }
 
 .improve__box_wrap {
@@ -405,7 +393,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 1070.45px;
+  max-width: 1070.45px;
   height: 697.45px;
   padding-left: 100px;
   -webkit-box-align: center;
@@ -413,7 +401,6 @@ body {
           align-items: center;
   padding-top: 146px;
   position: relative;
-  background-color: #FFFAFB;
 }
 
 .intructors__text {
@@ -495,12 +482,12 @@ body {
 .testimonional {
   width: 100%;
   height: 719px;
-  outline: 1px solid green;
   position: relative;
   background-image: url(../images/testimonional/testimonional.jpg);
   background-position: left;
   background-repeat: no-repeat;
   background-color: transparent;
+  margin-top: 204px;
 }
 
 .testimonional__dots {
@@ -591,7 +578,8 @@ body {
 
 .subscripe__wrap {
   max-width: 633px;
-  margin: 230px auto 0;
+  padding-top: 230px;
+  padding-bottom: 262px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -665,23 +653,22 @@ body {
 
 .footer {
   width: 100%;
-  height: 440px;
+  min-height: 440px;
   background-color: rgba(255, 243, 244, 0.9);
 }
 
 .footer__wrap {
   width: 100%;
   height: 440px;
+}
+
+.footer__column_conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.footer__pad {
-  margin-top: 262px;
 }
 
 .footer__left_div {
@@ -694,8 +681,8 @@ body {
           flex-direction: column;
   width: 333px;
   height: 254px;
-  outline: 1px solid red;
   left: 0;
+  padding-top: 67px;
 }
 
 .footer__left_title {
@@ -751,5 +738,55 @@ body {
 
 .footer__bootons:hover svg {
   fill: white;
+}
+
+.footer__rigth_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 168px;
+  padding-top: 85px;
+}
+
+.footer__columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__right_title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #3A1212;
+  padding-bottom: 39px;
+}
+
+.footer__right_text {
+  text-decoration: none;
+  padding-bottom: 18px;
+}
+
+.footer__right_text:hover {
+  color: #3A1212;
+  -webkit-text-decoration: underline #FF2625;
+          text-decoration: underline #FF2625;
+}
+
+.footer__down_text {
+  text-align: center;
+  padding: 25px 0 55px;
+  font-weight: 450;
+  font-size: 12px;
+  line-height: 120%;
+  color: #A69B9B;
 }
 /*# sourceMappingURL=style.css.map */
