@@ -3,41 +3,76 @@
     padding: 0;
 }
 body{
+    background-color: #FFFAFB;
     font-family: Josefin Sans, sans-serif;
 }
 .wrapper{
     max-width: 1170px;
     margin:0 auto;
-    outline: 1px solid green;
+    // outline: 1px solid green;
 }
-.outline{
-    outline:1px solid red;
+.button{
+    &__text_btn{
+        background-color: white;
+        border-radius: 50px;
+        width: 200px;
+        height: 58px;
+        font-size: 22px;
+        line-height: 160%;
+        color: #3A1212;
+        margin-right: 28px;
+        transition: 0.3s;
+        border:1px solid #FF2625;
+        
+    }
+    &__text_btn:hover{
+       
+        color:white;
+        background-color: #FF2625;
+    }
 }
-.main_window{
-    max-width: 1600.03px;
-    height: 6602px;
-    background-color: #E5E5E5;
-    position: relative;  
-    background-image: url(../images/slider/bgimage.jpg);  
+.smal_grey_text{
+        
+        font-size: 22px;
+        line-height: 160%;
+        color: #504747;   
 }
-.forbgi{
-    width: 100%;
+.min_red_text{
+        
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 160%;
+        color: #FF2625;
+}
+.big_black_text{
+        font-size: 44px;
+        line-height: 130%;
+        text-align: center;
+        color: #3A1212;
+}
+.all_site_body{
+    max-width: 1600px;
+    margin: 0 auto;
+    background-image: url(../images/header/Frame5.jpg);
     background-repeat: no-repeat;
-    background-image: url(../images/slider/bgimageonly.jpg);
+    padding:0 20px;
+    background-position-y:  150px;
 }
+.image_dots{
+    width: 118px;
+    height: 134px;
+}
+
 .header{
-    position: absolute;
-    right: 0;
-    width: 1385px;
+
+    max-width: 1385px;
     height: 1066px;
-    outline:1px solid red;
     background-image: url(../images/slider/girl_with_bottle.jpg);
     background-repeat: no-repeat;
     background-position-x: right;
     display:flex;
     flex-direction: column;
-    
-    
+    margin-left: 215px;  
     &__menu{
         max-width: 1170px;
         display: flex;
@@ -68,15 +103,13 @@ body{
         height: 46px;
     }
     &__text{
-        outline:1px solid blue;
+        
         width: 472px;
+        justify-content: flex-start;
     }
     &__minired{
         padding-top: 212px;
-        font-weight: 600;
-        font-size: 26px;
-        line-height: 160%;
-        color: #FF2625;
+        
     }
     &__tittle{
         padding-top: 39px;
@@ -86,34 +119,507 @@ body{
     }
     &__main_text{
         padding: 23px 0 61px;
-        font-size: 22px;
-        line-height: 160%;
-        color: #504747;
-    }
-    &__text_btn{
-        background-color: white;
-        border-radius: 50px;
-        width: 200px;
-        height: 58px;
-        font-size: 22px;
-        line-height: 160%;
-        color: #3A1212;
-        margin-right: 28px;
-        transition: 0.3s;
-        border:1px solid #FF2625;
         
-    }
-    &__text_btn:hover{
-       
-        color:white;
-        background-color: #FF2625;
     }
     &__play_btn{
         border-radius: 50%;
         background-color: white;
+        transition: 0.2s;
         padding:44px;
         border: none;
         justify-self: center;
         align-self: center;
+        margin-top:-800px;
+        margin-right: 100px;
+        box-shadow:0px 40px 80px rgba(255, 71, 70, 0.1);
+
+    }
+    &__play_btn svg{
+        fill:#FF2625;
+        
+    }
+    &__play_btn:hover{
+        fill:white;
+        background-color:#FF2625 ;
+    }
+    &__play_btn:hover svg{
+        fill:white;
+    }
+    &__dots{
+        justify-self: center;
+        align-self: center;
+        margin-top:450px;
+        margin-right: -1200px;
+        
+    }
+    &__bottom-text{
+        font-weight: 600;
+        font-size: 200px;
+        line-height: 160%;
+        color: rgba(255, 38, 37, 0.05);  
     }
 }
+.servises{
+    &__servis_wrap{
+        display: flex;
+        flex-direction: column;
+        height: 588.45px;
+        align-items: center;
+        margin-top: 171px;
+        position: relative;
+        // background-color: #FFFAFB;
+    }
+    &__text{
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 160%;
+        color: #FF2625;
+    }
+    &__bigtext{
+       
+        padding:28px 0 57px 0;
+    }
+    &__cart-box{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        
+    }
+    &__cart{
+        width: 270px;
+        height: 282px;
+        display: flex;
+        flex-direction: column;
+        background: #FFFFFF;
+        border: 0.5px solid #E1E1E1;
+        box-sizing: border-box;
+        border-radius: 5px 5px 5px 35px;
+        align-items: center;
+    }
+    &__cart:hover{
+        height: 332px;
+        box-shadow:0px 40px 80px rgba(255, 169, 169, 0.25);
+    }
+    &__cart:hover &__cart_link{
+        display: inline;
+    }
+    &__cart_img{
+        padding:65px 0 47px 0;
+        width: 63px;
+        height: 63px;
+    }
+    &__cart_text{
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        color: #3A1212;
+    }
+    &__cart_link{
+        text-decoration: none;
+        color: #FF2625;
+        font-size: 22px;
+        line-height: 120%;
+        text-align: center;
+        padding:40px 0 33px 0;
+        display: none;
+    }
+    &__cart_link:hover{
+        font-size: 23px;
+    }
+    &__button_box{   
+        position:absolute;
+        bottom:0;
+        right: 0;
+        width: 60px;
+        height: 31.45px; 
+    }
+    &__button_box svg{       
+        fill:#3A1212;       
+    }
+    &__btn{
+        border: none;
+        transition: 0.2s;
+        background-color: transparent;
+    }
+    &__btn:hover svg{       
+        fill:#FF2625;
+        width: 31.45px;
+        height: 31.45px;
+        box-shadow:0px 10px 10px rgba(255, 38, 37, 0.25);     
+    }
+     
+}
+.health{
+    width: 100%;
+    height: 665px;
+    position: relative;
+    background-image: url(../images/health/Rectangle.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-top:212px;
+    // background-color: #FFFAFB;
+
+    & svg{
+        position: absolute;
+        left:-50px;
+        top:30px;
+    }
+    &__box_wrap{
+        width: 502px;
+        min-height: 454px;
+        position: absolute;
+        right: 0;
+        margin-top: 111px;
+    }
+    &__big_text{
+        text-align: start;
+        padding:28px 0 22px 0;
+    }
+    &_grey_text{
+        padding-bottom: 42px;
+    }
+}
+.improve{
+    width: 100%;
+    height: 665px;
+    position: relative;
+    background-image: url(../images/improve/improvegirl.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-top:212px;
+    
+    // background-color: #FFFAFB;
+
+    & svg{
+        position: absolute;
+        right:-50px;
+        bottom:40px;
+    }
+    &__box_wrap{
+        width: 502px;
+        min-height: 454px;
+        position: absolute;
+        left: 0;
+        margin-top: 111px;
+    }
+    &__big_text{
+        text-align: start;
+        padding:28px 0 22px 0;
+    }
+    &_grey_text{
+        padding-bottom: 42px;
+    }
+}
+.intructors{
+    display: flex;
+    flex-direction: column;
+    max-width: 1070.45px;
+    height: 697.45px;
+    padding-left: 100px;
+    align-items: center;
+    padding-top:146px;
+    position: relative;
+    &__text{
+        padding:28px 0 24px 0;
+    }
+    &__hub{
+        display: flex;
+        justify-content: space-between;
+        gap:81px;
+    }
+    &__div{
+        width: 268px;
+        height: 448px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__image_box{
+        width: 271px;
+        height: 380px;       
+        position: relative;
+        
+        
+    }
+    &__image{
+        position:absolute;
+        bottom:0;
+    }
+    &__name{
+        padding-top:38px;
+        font-size: 24px;
+        line-height: 160%;
+        text-align: center;
+        color: #000000;
+    }
+    &__button_box{   
+        position:absolute;
+        bottom:0;
+        right: 0;
+        width: 60px;
+        height: 31.45px;
+    }
+    &__button_box svg{       
+        fill:#3A1212;       
+    }
+    &__btn{
+        border: none;
+        transition: 0.2s;
+        background-color: transparent;
+    }
+    &__btn:hover svg{       
+        fill:#FF2625;
+        width: 31.45px;
+        height: 31.45px;
+        box-shadow:0px 10px 10px rgba(255, 38, 37, 0.25);     
+    }
+     
+}
+.testimonional{
+    width: 100%;
+    height: 719px;
+    position: relative;
+    background-image: url(../images/testimonional/testimonional.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    margin-top:204px;
+
+    &__dots{
+        position: absolute;
+        right:0;
+        bottom:0;
+    }
+    &__box_wrap{
+        width: 502px;
+        min-height: 454px;
+        position: absolute;
+        right: 0;
+        
+    }
+    &__big_text{
+        text-align: start;
+        padding:28px 0 22px 0;
+    }
+    &_grey_text{
+        font-style: italic;
+    }
+    &__text_box{
+        width: 624px;
+        background: #FFFFFF;
+        border-radius: 2px 100px 2px 2px;
+        position: absolute;
+        padding: 79px 60px 39px 60px;
+        right: 50px;
+        bottom:80px;
+        background-image: url(../images/testimonional/testimobgi.jpg);
+        background-position-x: center;
+        background-position-y: top;
+        background-repeat: no-repeat;
+        box-shadow:0px 40px 80px rgba(255, 169, 169, 0.25);
+
+    }
+    &__name{
+        font-size: 24px;
+        line-height: 130%;
+        color: #3A1212;
+        padding:39px 0 8px;
+    }
+    &__adress{
+        font-size: 18px;
+        line-height: 130%;
+        color: #504747;
+    }
+    &__btn_container{
+        
+        position: relative; 
+    }
+    &__button_box{   
+        position:absolute;
+        bottom:-10;
+        right: -40px;
+        width: 60px;
+        height: 31.45px; 
+        
+    }
+    &__button_box svg{       
+        fill:#3A1212;       
+    }
+    &__btn{
+        border: none;
+        transition: 0.2s;
+        background-color: transparent;
+    }
+    &__btn:hover svg{       
+        fill:#FF2625;
+        width: 31.45px;
+        height: 31.45px;
+        box-shadow:0px 10px 10px rgba(255, 38, 37, 0.25);     
+    }
+   
+}
+.subscripe{
+    &__wrap{
+        max-width: 633px;
+        padding-top:230px;
+        padding-bottom:262px;
+        display:flex;
+        flex-direction: column;
+        background-color: transparent;
+    }
+    &__grey_text{
+        padding:24px 0 36px 0;
+    }
+    &__form {
+        width: 100%;
+        height: 76px;
+        display: flex;
+        border-radius: 36px;
+        background-color: #FFFFFF;
+        align-items: center;
+        box-shadow:0px 40px 80px rgba(255, 169, 169, 0.25);
+      }
+    &__field {
+        width: 100%;        
+        border: none;       
+        color: #9B9DAC;
+        font-size: 20px;        
+        background-color: transparent;
+        padding: 0 10px 0 79px;
+      }
+      
+      &__field:-ms-input-placeholder {
+        font-size: 20px;
+        line-height: 160%;
+        color: #9B9DAC;
+        opacity: 0.67;
+      }
+      
+      &__form:hover{
+        background-color: #E9E9E9;
+      }
+      /*убираем рамку при вводе*/
+      &__field:active, :hover, :focus {
+        outline: 0;
+        outline-offset: 0;
+    }
+      
+      &__button {
+        width: 170px;
+        height: 58px;
+        padding: 13px 38px;
+        border-radius: 30px;
+        background-color:  #FF2625;
+        border: none;
+        color: #FFFFFF;
+        font-size: 20px;
+        line-height: 160%;
+        margin: 8px;
+      }
+      
+      &__button:hover {
+        background-color: #c34455;
+      }
+}
+.footer{
+    width: 100%;
+    min-height: 440px;
+    background-color: rgba(255, 243, 244, 0.9);
+    &__wrap{
+        width: 100%;
+        height: 440px;  
+        
+    }
+    &__column_conteiner{
+        display: flex;
+        justify-content:space-between;
+    }
+    
+    // &__pad{
+    //     padding-top:262px;
+    // }
+    &__left_div{
+        display: flex;
+        flex-direction: column;
+        width: 333px;
+        height: 254px;
+        // outline:1px solid red;
+        left:0;
+        padding-top:67px;
+    }
+    &__left_title{
+        font-size: 28px;
+        line-height: 120%;
+        color: #3A1212;
+    }
+    &__left_text{
+        padding:33px 0 27px;
+    }
+    &__logotyps{
+        display: flex;
+        justify-content: space-between;
+        gap:14px;
+        width: 220px;
+    }
+    &__bootons{
+        background-color: white;
+        border-radius: 100px;
+        height: 44.76px;
+        width:44.76px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0,3s;
+    }
+    &__bootons:hover {
+        background-color: #FF2625;
+        box-shadow:0px 40px 80px rgba(255, 169, 169, 0.25);
+    }
+    &__bootons svg{
+        fill:#FF2625;
+        transition: 0,3s;
+    }
+    &__bootons:hover svg{
+        fill:white;
+    }
+    &__rigth_div{
+        display:flex;
+        justify-content: space-between;
+        // outline:1px solid black;
+        gap:168px;
+        padding-top:85px;
+    }
+    &__columns{
+        display:flex;
+        flex-direction: column;        
+    }
+    &__right_title{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        color: #3A1212;
+        padding-bottom:39px;
+    }
+    &__right_text{
+        text-decoration: none;
+        padding-bottom:18px;
+    }
+    &__right_text:hover{
+        color: #3A1212;
+        text-decoration:underline #FF2625;
+    }
+    &__down_text{
+        text-align: center;
+        padding: 25px 0 55px;
+        font-weight: 450;
+        font-size: 12px;
+        line-height: 120%;
+        color: #A69B9B;
+    }
+}
+
+  
+  
+   
