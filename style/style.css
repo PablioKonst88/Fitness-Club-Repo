@@ -126,6 +126,12 @@ body {
 .header__button {
   width: 46px;
   height: 46px;
+  border: none;
+}
+
+.header__button:hover {
+  -webkit-box-shadow: 0px 10px 10px rgba(255, 38, 37, 0.25);
+          box-shadow: 0px 10px 10px rgba(255, 38, 37, 0.25);
 }
 
 .header__text {

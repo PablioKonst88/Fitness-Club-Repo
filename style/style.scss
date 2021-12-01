@@ -101,6 +101,10 @@ body{
     &__button{
         width: 46px;
         height: 46px;
+        border:none;
+    }
+    &__button:hover{
+        box-shadow:0px 10px 10px rgba(255, 38, 37, 0.25);
     }
     &__text{
         
