@@ -247,8 +247,6 @@ body{
     }
     &__btn:hover svg{       
         fill:#FF2625;
-        width: 31.45px;
-        height: 31.45px;
         box-shadow:0px 10px 10px rgba(255, 38, 37, 0.25);     
     }
      
@@ -374,8 +372,6 @@ body{
     }
     &__btn:hover svg{       
         fill:#FF2625;
-        width: 31.45px;
-        height: 31.45px;
         box-shadow:0px 10px 10px rgba(255, 38, 37, 0.25);     
     }
      
@@ -452,13 +448,11 @@ body{
     }
     &__btn{
         border: none;
-        transition: 0.2s;
+        transition: .2s;
         background-color: transparent;
     }
     &__btn:hover svg{       
         fill:#FF2625;
-        width: 31.45px;
-        height: 31.45px;
         box-shadow:0px 10px 10px rgba(255, 38, 37, 0.25);     
     }
    

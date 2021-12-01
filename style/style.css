@@ -6,7 +6,7 @@
 
 body {
   background-color: #FFFAFB;
-  font-family: 'Josefin Sans', sans-serif;;
+  font-family: Josefin Sans, sans-serif;
 }
 
 .wrapper {
@@ -319,8 +319,6 @@ body {
 
 .servises__btn:hover svg {
   fill: #FF2625;
-  width: 31.45px;
-  height: 31.45px;
   -webkit-box-shadow: 0px 10px 10px rgba(255, 38, 37, 0.25);
           box-shadow: 0px 10px 10px rgba(255, 38, 37, 0.25);
 }
@@ -479,8 +477,6 @@ body {
 
 .intructors__btn:hover svg {
   fill: #FF2625;
-  width: 31.45px;
-  height: 31.45px;
   -webkit-box-shadow: 0px 10px 10px rgba(255, 38, 37, 0.25);
           box-shadow: 0px 10px 10px rgba(255, 38, 37, 0.25);
 }
@@ -565,15 +561,13 @@ body {
 
 .testimonional__btn {
   border: none;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: .2s;
+  transition: .2s;
   background-color: transparent;
 }
 
 .testimonional__btn:hover svg {
   fill: #FF2625;
-  width: 31.45px;
-  height: 31.45px;
   -webkit-box-shadow: 0px 10px 10px rgba(255, 38, 37, 0.25);
           box-shadow: 0px 10px 10px rgba(255, 38, 37, 0.25);
 }
